@@ -1,0 +1,182 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[shortlabels]{enumitem}
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+\usepackage{graphicx}
+
+\usepackage{float}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\raggedbottom
+\setlength{\parindent}{0pt}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\vert#1\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\lVert#1\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E[ #1 ]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{AI1103-Assignment-5}
+\author{Kodavanti Rama Sravanth,CS20BTECH11027}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/Sravanth-k27/AI1103/tree/main/Assignment-5/codes
+\end{lstlisting}
+%
+Download latex-tikz codes from 
+%
+\begin{lstlisting}
+ https://github.com/Sravanth-k27/AI1103/tree/main/Assignment-5/Assignment-5.tex 
+\end{lstlisting}
+\section*{UGC/math 2018(june math set a )Q.18:}
+Two students are solving the same problem independently,if the probability of first one solves the problem is $\frac{3}{5}$ and the probability that the second one solves the problem is $\frac{4}{5}$ ,what is the probability that atleast one of them solves the problem?
+\begin{enumerate}[(A)]
+\begin{multicols}{2}
+\item $ \frac{17}{25}$\\
+\item $\frac{19}{25}$\\
+\item $ \frac{21}{25}$\\
+\item $\frac{23}{25}$
+\end{multicols}
+\end{enumerate}
+\section*{Solution UGC/math 2018(june math set a )Q.18::}
+Let the two students be A,B.
+Let the events of solving the problem by A,B be X,Y respectively.
+\\ The probability of solving the problem by A is $\pr{X}.$
+ \\The probability of solving the problem by B is $\pr{Y}.$\\
+Given that 
+\begin{align}
+    \pr{X}=\frac{3}{5}\label{eq:0.0.1}\\
+    \pr{Y}=\frac{4}{5}\label{eq:0.0.2}
+\end{align}
+Now we have to find probability of solving the problem by atleast one of them i.e $\pr{X+Y}$\\
+As,
+\begin{align}
+    \pr{X+Y}=\pr{X}+\pr{Y}-\pr{XY}\label{eq:0.0.3}
+\end{align}
+Given that students solve the problem independently.So events X and Y are independent.\\
+for independent events
+\begin{align}
+    \pr{XY}=\pr{X}\times \pr{Y}
+\end{align}
+from \eqref{eq:0.0.1} and \eqref{eq:0.0.2}
+\begin{align}
+    \pr{XY}&=\frac{3}{5}\times \frac{4}{5}
+    \end{align}
+    \begin{align}
+    \pr{XY}&=\frac{12}{25}\label{eq:0.0.6}
+\end{align}
+\\
+now substituting \eqref{eq:0.0.1},\eqref{eq:0.0.2}, \eqref{eq:0.0.6} in \eqref{eq:0.0.3} gives 
+\begin{align}
+\pr{X+Y}=\frac{3}{5}+\frac{4}{5}-\frac{12}{25}
+\end{align}
+\begin{align}
+\pr{X+Y}=\frac{23}{25}
+\end{align}
+\\ Hence the probability that atleast one of them solves the problem is $\frac{23}{25}$\\
+\\    \textbf{$\therefore$ Option D is correct} 
+\end{document}
